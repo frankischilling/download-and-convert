@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Image Converter</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 16px;
+      min-width: 200px;
+      color: #111;
+    }
+    h1 {
+      font-size: 16px;
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #555;
+    }
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: white;
+      cursor: pointer;
+    }
+    select:hover {
+      border-color: #0078d4;
+    }
+    select:focus {
+      outline: none;
+      border-color: #0078d4;
+      box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+    }
+    #status {
+      margin-top: 12px;
+      height: 18px;
+      color: #0078d4;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Converter</h1>
+  <label for="format">Download images as:</label>
+  <select id="format">
+    <option value="png">PNG</option>
+    <option value="jpeg">JPEG</option>
+    <option value="webp">WEBP</option>
+    <option value="bmp">BMP</option>
+  </select>
+  <div id="status" aria-live="polite"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
